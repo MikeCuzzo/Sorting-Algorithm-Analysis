@@ -59,10 +59,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/139/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/145/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/139/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/145/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/mcuzzo71/Desktop/21s-pa02-MikeCuzzo/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/139/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/145/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/139/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/145/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -143,6 +143,60 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/21s-pa02-MikeCuzzo.dir/build.make CMakeFiles/21s-pa02-MikeCuzzo.dir/build
 .PHONY : 21s-pa02-MikeCuzzo/fast
 
+src/Sort.o: src/Sort.cpp.o
+
+.PHONY : src/Sort.o
+
+# target to build an object file
+src/Sort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21s-pa02-MikeCuzzo.dir/build.make CMakeFiles/21s-pa02-MikeCuzzo.dir/src/Sort.cpp.o
+.PHONY : src/Sort.cpp.o
+
+src/Sort.i: src/Sort.cpp.i
+
+.PHONY : src/Sort.i
+
+# target to preprocess a source file
+src/Sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21s-pa02-MikeCuzzo.dir/build.make CMakeFiles/21s-pa02-MikeCuzzo.dir/src/Sort.cpp.i
+.PHONY : src/Sort.cpp.i
+
+src/Sort.s: src/Sort.cpp.s
+
+.PHONY : src/Sort.s
+
+# target to generate assembly for a file
+src/Sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21s-pa02-MikeCuzzo.dir/build.make CMakeFiles/21s-pa02-MikeCuzzo.dir/src/Sort.cpp.s
+.PHONY : src/Sort.cpp.s
+
+src/SortAlgs.o: src/SortAlgs.cpp.o
+
+.PHONY : src/SortAlgs.o
+
+# target to build an object file
+src/SortAlgs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21s-pa02-MikeCuzzo.dir/build.make CMakeFiles/21s-pa02-MikeCuzzo.dir/src/SortAlgs.cpp.o
+.PHONY : src/SortAlgs.cpp.o
+
+src/SortAlgs.i: src/SortAlgs.cpp.i
+
+.PHONY : src/SortAlgs.i
+
+# target to preprocess a source file
+src/SortAlgs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21s-pa02-MikeCuzzo.dir/build.make CMakeFiles/21s-pa02-MikeCuzzo.dir/src/SortAlgs.cpp.i
+.PHONY : src/SortAlgs.cpp.i
+
+src/SortAlgs.s: src/SortAlgs.cpp.s
+
+.PHONY : src/SortAlgs.s
+
+# target to generate assembly for a file
+src/SortAlgs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21s-pa02-MikeCuzzo.dir/build.make CMakeFiles/21s-pa02-MikeCuzzo.dir/src/SortAlgs.cpp.s
+.PHONY : src/SortAlgs.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -179,6 +233,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 21s-pa02-MikeCuzzo"
+	@echo "... src/Sort.o"
+	@echo "... src/Sort.i"
+	@echo "... src/Sort.s"
+	@echo "... src/SortAlgs.o"
+	@echo "... src/SortAlgs.i"
+	@echo "... src/SortAlgs.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

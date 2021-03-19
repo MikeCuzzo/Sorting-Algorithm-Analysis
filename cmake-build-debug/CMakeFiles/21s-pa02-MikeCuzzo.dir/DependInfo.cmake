@@ -4,12 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mcuzzo71/Desktop/21s-pa02-MikeCuzzo/src/Sort.cpp" "/home/mcuzzo71/Desktop/21s-pa02-MikeCuzzo/cmake-build-debug/CMakeFiles/21s-pa02-MikeCuzzo.dir/src/Sort.cpp.o"
+  "/home/mcuzzo71/Desktop/21s-pa02-MikeCuzzo/src/SortAlgs.cpp" "/home/mcuzzo71/Desktop/21s-pa02-MikeCuzzo/cmake-build-debug/CMakeFiles/21s-pa02-MikeCuzzo.dir/src/SortAlgs.cpp.o"
   "/home/mcuzzo71/Desktop/21s-pa02-MikeCuzzo/src/main.cpp" "/home/mcuzzo71/Desktop/21s-pa02-MikeCuzzo/cmake-build-debug/CMakeFiles/21s-pa02-MikeCuzzo.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  ".././src"
   )
 
 # Targets to which this target links.

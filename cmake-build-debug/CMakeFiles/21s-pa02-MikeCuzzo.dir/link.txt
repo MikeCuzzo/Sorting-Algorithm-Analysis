@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/21s-pa02-MikeCuzzo.dir/src/main.cpp.o  -o 21s-pa02-MikeCuzzo 
+/usr/bin/c++  -g   CMakeFiles/21s-pa02-MikeCuzzo.dir/src/main.cpp.o CMakeFiles/21s-pa02-MikeCuzzo.dir/src/Sort.cpp.o CMakeFiles/21s-pa02-MikeCuzzo.dir/src/SortAlgs.cpp.o  -o 21s-pa02-MikeCuzzo 
