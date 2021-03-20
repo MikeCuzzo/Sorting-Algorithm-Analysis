@@ -7,6 +7,7 @@
 
 
 #include "AlgorithmStrategy.h"
+#include "SortAlgs.h"
 
 class Sort: public AlgorithmStrategy{
 private:

@@ -12,19 +12,27 @@
 class SortAlgs {
 public:
     //selection
-    std::vector<int> selection(std::vector<int>,int);
+    static std::vector<int> selection(std::vector<int>);
+
     //quick
-    std::vector<int> quick(std::vector<int>,int,int);
+    static std::vector<int> quick(std::vector<int>);
+    static std::vector<int> quickSort(std::vector<int>,int,int);
+    static int partition(std::vector<int>,int,int);
+
     //merge
-    std::vector<int> merge(std::vector<int>);
-    std::vector<int> sortMerge(std::vector<int>,int,int);
-    std::vector<int> merger(std::vector<int>,int,int,int);
+    static std::vector<int> merge(std::vector<int>);
+    static std::vector<int> sortMerge(std::vector<int>,int,int);
+    static std::vector<int> merger(std::vector<int>,int,int,int);
+
     //insertion
-    std::vector<int> insertion(std::vector<int>);
+    static std::vector<int> insertion(std::vector<int>);
+
     //heap
-    std::vector<int> heap(std::vector<int>,int);
+    static std::vector<int> heap(std::vector<int>);
+    static void heapify(std::vector<int>,int,int);
+
     //bubble
-    std::vector<int> bubble(std::vector<int>);
+    static std::vector<int> bubble(std::vector<int>);
 };
 
 
