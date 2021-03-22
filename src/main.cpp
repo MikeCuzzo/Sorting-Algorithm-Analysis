@@ -5,15 +5,12 @@
 
 int main() {
     //assigns algorithms
-    //std::vector<std::string> sorts = {"selection", "quick", "merge", "insertion", "heap", "bubble"};
     std::vector<std::string> sorts = {"selection", "quick", "merge", "insertion", "heap", "bubble"};
 
     //assigns data set sizes
-    //std::vector<int> dataSizes = {10, 1000, 10000, 100000, 1000000};
-    std::vector<int> dataSizes = {1000000};
+    std::vector<int> dataSizes = {10, 1000, 10000, 100000, 1000000};
 
     //assigns data set types
-    //std::vector<std::string> dataTypes = {"fullRand" ,"reversed", "unique", "semiRand"};
     std::vector<std::string> dataTypes = {"fullRand" ,"reversed", "unique", "semiRand"};
 
 
@@ -29,6 +26,5 @@ int main() {
                 }
             }
         }
-
     return 0;
 }
