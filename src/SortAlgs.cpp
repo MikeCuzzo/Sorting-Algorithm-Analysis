@@ -22,36 +22,39 @@ std::vector<int> SortAlgs::selection(std::vector<int> data) {
 }
 
 std::vector<int> SortAlgs::quick(std::vector<int> data) {
-    return quickSort(data,0,data.size());
+    return quickSort(data, 0, data.size()-1);
 }
 
-std::vector<int> SortAlgs::quickSort(std::vector<int> data, int low, int high) {
-    if (low < high) {
-        /* pi is partitioning index, arr[p] is now
-        at right place */
-        int pi = partition(data, low, high);
+std::vector<int> SortAlgs::quickSort(std::vector<int> data, int left, int right) {
+    int p = (left + right) / 2;
+    int pivot = data[p];
 
-        // Separately sort elements before
-        // partition and after partition
-        quickSort(data, low, pi - 1);
-        quickSort(data, pi + 1, high);
-    }
-    return data;
-}
+    // Move elements smaller than the pivot to the left side
+    int l = left;
+    int r = right;
 
-int SortAlgs::partition(std::vector<int> data, int low, int high) {
-    int pivot = data[high]; // pivot
-    int i = (low - 1); // Index of smaller element and indicates the right position of pivot found so far
-
-    for (int j = low; j <= high - 1; j++) {
-        // If current element is smaller than the pivot
-        if (data[j] < pivot) {
-            i++; // increment index of smaller element
-            std::swap(data[i], data[j]);
+    while (l <= r) {
+        while (data[l] < pivot)
+            ++l;
+        while (data[r] > pivot)
+            --r;
+        if (l <= r) {
+            int tmp = data[l];
+            data[l] = data[r];
+            data[r] = tmp;
+            ++l;
+            --r;
         }
     }
-    std::swap(data[i + 1], data[high]);
-    return (i + 1);
+
+    if (left < r) {
+        quickSort(data, left, r);
+    }
+
+    if (l < right) {
+        quickSort(data, l, right);
+    }
+    return data;
 }
 
 std::vector<int> SortAlgs::merge(std::vector<int> data) {

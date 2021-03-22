@@ -6,8 +6,10 @@
 #define INC_21S_PA02_MIKECUZZO_SORTALGS_H
 
 #include "vector"
+#include "chrono"
 
 //code for the sorting algorithms are referenced from geeksforgeeks.com
+//quicksort code referenced from https://www.danielkoitzsch.de/blog/2016/11/18/quicksort-implementation-in-c/
 
 class SortAlgs {
 public:
@@ -17,7 +19,6 @@ public:
     //quick
     static std::vector<int> quick(std::vector<int>);
     static std::vector<int> quickSort(std::vector<int>,int,int);
-    static int partition(std::vector<int>,int,int);
 
     //merge
     static std::vector<int> merge(std::vector<int>);

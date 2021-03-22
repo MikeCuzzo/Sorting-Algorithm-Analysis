@@ -8,6 +8,10 @@
 
 #include "AlgorithmStrategy.h"
 #include "SortAlgs.h"
+#include "algorithm"
+#include "random"
+
+//random number generator code referenced from fluentcpp.com
 
 class Sort: public AlgorithmStrategy{
 private:
@@ -15,11 +19,12 @@ private:
     std::vector<int> data;
     std::vector<int>(*currAlg)(std::vector<int>&);
     std::string algName;
+    std::string dataType;
 
 public:
     Sort();
     ~Sort();
-    void load(int size);
+    void load(std::string,int);
     void execute();
     void stats();
     void handoff(std::string);
